@@ -1,152 +1,66 @@
+/*tags*/
 *{
     margin: 0;
     padding: 0;
-    font-family: 'lato';
-    list-style: none;
-    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-html { 
-  background: url("Background.png") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+header{
+    background-color:#D1F4F8;
+    min-height: 200px;
+    padding: 20px;
 }
-body{
-    background-color: #6c7a86;
-}
-
-.wrapper{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.mainMenu{
-    width: 250px;
-    display: block;
-    border-radius: 10px;
-    overflow: hidden;
-}
-/*Cor bordas menus*/
-.item{
-    border-top: 0px solid #EA625A;
-    overflow: hidden;
-}
-.btn{
-    display: block;
-    padding: 15px 20px;
-    background-color: #A62A2A;
-    color: #fff;
-    position: relative;
-
-}
-.btn:before{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right:8px solid transparent;
-    border-top:10px solid transparent;
-    right: 15px;
-    bottom: -10px;
-    z-index: 9;
-    
-}
-.btn i {
-    margin-right: 10px;
-}
-.subMenu{
-    background: #B8706B;
-    overflow: hidden;
-    transition: max-height 0.7s;
-    max-height: 0;
-}
-.subMenu a{
-    display: block;
-    padding: 15px 20px;
-    color: #fff;
-    font-size: 14px;
-    border-bottom: 0px solid #394c7f;
-    position: relative;
-    
-}
-.subMenu a:before{
-    content: '';
-    opacity: 0;
-    transition: opacity 0.3s;
-
-}
-.subMenu a:hover:before{
-    content: '';
-    position: absolute;
-    height: 0;
-    width: 6px;
-    left: 0;
-    top:0;
-    opacity: 0.5;
-    /* background-color: #d8d824; */
-    border-top: 24px solid transparent;
-    border-bottom: 24px solid transparent;
-}
-.subMenu a:after{
-    content: '';
-    opacity: 0;
-    transition: opacity 0.3s;
-
-}
-.subMenu a:hover:after{
-    content: '';
-    position: absolute;
-    height: 0;
-    width: 6px;
-    right: 0px;
-    top:0;
-    opacity: 1;
-    /* background-color: #d8d824; */
-    border-top: 24px solid transparent;
-    border-bottom: 24px solid transparent;
-}
-.subMenu a:hover{
-    background: #AA3730;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273057', endColorstr='#394c7f',GradientType=0 );
-    transition: all 0.3s;
-    border-bottom: 0px solid rgba(0,0,0,0);
-}
-.subMenu a:last-child{
-    border:none;
-}
-.item:target .subMenu{
-    max-height: 10em;
-}
-
-
-
-/*  footer   */
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
+footer{
+    clear: both;
+    background-color:#C79361;
+    min-height: 140px;
     text-align: center;
-    z-index: 999;
+    padding: 20px
 }
-
-footer p {
-    margin: 10px 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h1{
+    margin-bottom: 50px;
 }
-
-
-footer a {
-    color: #3c97bf;
+/*ids*/
+#main{
+    min-height: 580px;
+    padding: 80px 0 0 0;
+    clear: both;
+    background-image: url('images/Background.png');
+    background-size: 100%;
+    color: silver;
+    text-shadow: 2px 2px 2px 2px black;
+}
+#title{
+    text-align: center;
+}
+#logo{
+    float: left;
+}
+#imagem{
+    width: 100px;
+}
+#menu{
+    margin-top: 40px;
+    width: 1170px;
+}
+#menu a{
+    display: block;
+    font-size: 30px;
+    padding: 20px 100px;
     text-decoration: none;
+    color: black;
 }
-
-/* footer  */
+#menu a:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: black;
+}
+/*Classes*/
+.container
+{
+    width: 1180px;
+    margin: auto;
+    color: black;
+}
+.efeito{
+	background-color:rgba(26, 24, 24, 0.7);
+	padding: 80px 0 80px 0;
+}

@@ -13,27 +13,38 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1>Geometrinho</h1>
-            <p>Fabrica de Software</p>
-        </div>
-        <br>
-        <div class="col">
-            <div class="row-xs-4">
-                <button type="button" class="btn btn-success btn-block btn-lg" onclick="goToScenario()">Aluno</button>
+            <br><br>
+            <h1 class="text-center"><span class="badge badge-info">Geometrinho</span></h1>
+            <p class="text-center">Fábrica de Software</p>
+            <br><br><br><br><br><br><br><br><br><br>
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col">
+                    <button type="button" class="btn btn-success  btn-lg btn-block text-left" onclick="goToScenario()">Aluno</button>
+                </div>
+                <div class="col-xl-2"></div>
             </div>
             <br>
-            <div class="row-xs-4">
-                <button type="button" class="btn btn-info btn-block btn-lg">Professor</button>
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col">
+                    <button type="button" class="btn btn-info  btn-lg btn-block btn-block text-left">Professor</button>
+                </div>
+                <div class="col-xl-2"></div>
             </div>
             <br>
-            <div class="row-xs-4">
-                <button type="button" class="btn btn-danger btn-block btn-lg">Sair</button>
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col">
+                    <button type="button" class="btn btn-danger btn-lg btn-block btn-block text-left">Sair</button>
+                </div>
+                <div class="col-xl-2"></div>
             </div>
         </div>
     </div>
 <script>
     function goToScenario(){
-        location.href = "school.html";
+        location.href = "scenarios/school/school.html";
     } 
 </script>
 <body>

@@ -4,5 +4,6 @@ function goToPage(page){
 }
 
 function  closeWindow(){
-    window.open('', '_self', ''); window.close();
+   let mywin = window.open('', '_self', ''); 
+   mywin.close();
 }

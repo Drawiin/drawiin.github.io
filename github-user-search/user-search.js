@@ -15,10 +15,10 @@ let renderRepo = (repos)=>{
     for(let repo of repos){
         let newRepo = document.createElement('li')
         let newLink = document.createElement('a')
-        newLink.innerHTML = 'acessar repositório'
+        newLink.innerHTML =  `${repo.name} <i class="fa fa-link"></i>`
         newLink.href = repo.html_url
-        newLink.className = "badge badge-info"
-        newRepo.innerHTML = repo.name + "  "
+        newLink.className = "btn btn btn-outline-dark"
+        // newRepo.innerHTML = repo.name + "  "
         newRepo.className = "list-group-item"
         newRepo.appendChild(newLink)
         repoList.appendChild(newRepo)

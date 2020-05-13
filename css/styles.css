@@ -8,6 +8,7 @@
 }
 
 body {
+  font-size: 10px;
   background-color: #fafafa;
   font-family: "Roboto", sans-serif;
 }
@@ -28,6 +29,12 @@ ul {
   align-items: center;
 }
 
+@media screen and (min-width: 800px) {
+  .topbar {
+    height: 70vh;
+  }
+}
+
 .menu {
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
@@ -37,13 +44,13 @@ ul {
 
 .menu__items {
   display: flex;
-  padding: 16px;
+  padding: 1rem 0.5rem;
   justify-content: center;
 }
 
 .menu__item {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 1.4rem;
   font-weight: 300;
   margin: 0 6px;
   transition: opacity 0.5s;
@@ -56,17 +63,29 @@ ul {
 
 .profile {
   color: #fafafa;
-  padding: 32px;
+  padding: 2rem 1.2rem;
   background-color: rgba(0, 0, 0, 0.9);
   margin: 0 5%;
 }
 
 .profile__name {
-  font-size: 42px;
+  font-size: 2.6rem;
   font-weight: 300;
 }
 
+@media screen and (min-width: 800px) {
+  .profile__name {
+    font-size: 4rem;
+  }
+}
+
 .profile__ocupation {
-  font-size: 28px;
+  font-size: 1.4rem;
   font-weight: 300;
+}
+
+@media screen and (min-width: 800px) {
+  .profile__ocupation {
+    font-size: 2rem;
+  }
 }

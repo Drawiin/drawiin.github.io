@@ -8,9 +8,14 @@
 }
 
 body {
-  font-size: 10px;
   background-color: #fafafa;
   font-family: "Roboto", sans-serif;
+}
+
+@media screen and(min-width: 800px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 ul {
@@ -88,4 +93,8 @@ ul {
   .profile__ocupation {
     font-size: 2rem;
   }
+}
+
+figure {
+  object-fit: cover;
 }

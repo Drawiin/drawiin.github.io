@@ -10,41 +10,46 @@
 body {
   background-color: #fafafa;
   font-family: "Roboto", sans-serif;
-}
-
-@media screen and(min-width: 800px) {
-  body {
-    font-size: 20px;
-  }
+  background-image: url("../assets/img/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ul {
   list-style: none;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .topbar {
-  background-image: url("../assets/img/background.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (min-width: 800px) {
-  .topbar {
-    height: 70vh;
-  }
-}
-
 .menu {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #000000;
   position: fixed;
   top: 0;
   width: 100vw;
+  animation: linear 1.5s animationMenu;
+}
+
+@keyframes animationMenu {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .menu__items {
@@ -57,7 +62,7 @@ ul {
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: 300;
-  margin: 0 6px;
+  margin: 0 1rem;
   transition: opacity 0.5s;
 }
 
@@ -69,8 +74,20 @@ ul {
 .profile {
   color: #fafafa;
   padding: 2rem 1.2rem;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #000000;
   margin: 0 5%;
+  animation: linear 1.5s animationProfile;
+}
+
+@keyframes animationProfile {
+  0% {
+    transform: scale(0.2) translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
 }
 
 .profile__name {
@@ -94,7 +111,46 @@ ul {
     font-size: 2rem;
   }
 }
+.portfolio {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
 
-figure {
-  object-fit: cover;
+.title {
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.projects {
+  padding: 2em;
+  min-height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 0.2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.card__img {
+  width: 100%;
+  height: 400px;
+}
+
+.card__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  filter: grayscale(1);
 }

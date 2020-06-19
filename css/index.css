@@ -10,10 +10,16 @@
 }
 
 /*Global tags*/
+::before,
+::after {
+  margin: 0;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--primary-text);
   font-family: var(--primary-font-famiy);
+  margin: 0;
 }
 
 a {
@@ -72,6 +78,8 @@ a {
   width: 100%;
   text-align: center;
   display: none;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  font-weight: 300;
 }
 
 .menu-item:hover {
@@ -96,10 +104,45 @@ a {
 /*Presentation*/
 .presentation {
   padding: 1rem;
-  font-size: 1.4rem;
+  text-align: center;
+  text-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.8);
 }
+
+.presentation-title {
+  font-size: 2.8rem;
+  margin: 0.5rem 0;
+  font-weight: 300;
+}
+
+.presentation-subtitle {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  font-weight: 300;
+}
+
+/*sections*/
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-content {
+  background-color: var(--surface-color);
+  padding: 0.5rem;
+}
+
 /*Responsivo*/
 @media screen and (min-width: 600px) {
+  /*Responsive Menu*/
   .menu {
     flex-direction: row;
     max-width: 600px;
@@ -109,5 +152,16 @@ a {
   }
   .menu-button {
     display: none;
+  }
+  /*Responsive presentation*/
+  .presentation-title {
+    font-size: 3.2rem;
+  }
+  .presentation-subtitle {
+    font-size: 1.8rem;
+  }
+  /*Responsive sections*/
+  .section .container {
+    max-width: 800px;
   }
 }

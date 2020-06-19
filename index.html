@@ -7,16 +7,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="./javascript/index.js" async defer></script>
     <link rel="stylesheet" href="./css/index.css" />
     <title>Vinicius Santos - Full Stack Web Developer</title>
   </head>
   <body>
     <header class="header">
       <div class="header-content">
-        <nav class="menu">
-          <a class="menu-item">sobre</a>
-          <a class="menu-item">portifolio</a>
-          <a class="menu-item">contato</a>
+        <nav class="menu" id="menu">
+          <button class="menu-button" id="menu-toggle">
+            <i class="material-icons">menu</i>
+          </button>
+          <a href="#about" class="menu-item">sobre</a>
+          <a href="#portfolio" class="menu-item">portifolio</a>
+          <a href="#contact" class="menu-item">contato</a>
         </nav>
         <div class="presentation">
           <h2 class="presentation-title">Vinicius Santos</h2>
